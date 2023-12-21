@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-display: swap;
+    src: url("./fonts/Roboto-Bold.woff2") format("woff2"),
+        url("./fonts/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-display: swap;
+    src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+        url("./fonts/Roboto-Regular.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+img {
+    display: block;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.container {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.list-styles {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* header start */
+.header-box {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navbar {
+    margin-right: 40px;
+    margin-left: auto;
+}
+.navbar-list {
+    display: flex;
+    column-gap: 30px;
+}
+.navbar-item-link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-decoration-line: none;
+    color: #333;
+}
+.header-to-help {
+    width: 155px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+    padding-bottom: 6px;
+    outline: none;
+}
+.header-to-help::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: #666;
+}
+/* header finish */
+
+/* section one start */
+.hero {
+    padding-top: 140px;
+    padding-bottom: 183px;
+    border-bottom: 2px solid #ddd;
+    background-image: url("./images/herobg.png");
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 545px) calc(50% + 50px);
+}
+.hero-text-wrapper {
+    width: 490px;
+}
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 60px;
+}
+.hero-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777;
+}
+.hero-button {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    background-color: #ea625c;
+}
+/* section one finish */
+
+/* section two start */
+.amenities {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.amenities-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.amenities-item {
+    width: 280px;
+}
+.amenities-item-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #222;
+}
+.amenities-item-desc {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+}
+.amenities-square {
+    width: 8px;
+    height: 8px;
+    box-shadow: 20px 0 0 0 #ddd, 40px 0 0 #ddd;
+    background-color: #ddd;
+}
+.amenities-item-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-decoration-line: none;
+    color: #ea625c;
+}
+.amenities-item-link-vector {
+    width: 40px;
+    height: 3px;
+    margin-right: 10px;
+    background-color: #ea625c;
+}
+/* section two finish */
+
+/* section three start */
+.watchinhand {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.watchinhand-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.watchinhand-text-wrapper {
+    width: 490px;
+}
+.watchinhand-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 60px;
+}
+.watchinhand-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-left: 3px solid #888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 40px;
+    color: #777;
+}
+.watchinhand-button {
+    display: flex;
+    width: 260px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    background-color: #ea625c;
+}
+/* section three finish */
+
+/* footer start */
+.site-footer {
+    padding-top: 240px;
+    padding-bottom: 239px;
+    background-image: url("./images/runners.png");
+    background-size: 1550px;
+}
+.footer-text-wrapper {
+    width: 490px;
+    margin-left: auto;
+}
+.footer-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+}
+.footer-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-left: 3px solid #fff;
+    padding-left: 40px;
+    color: #fff;
+}
+.footer-button {
+    display: flex;
+    width: 260px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    background-color: #ea625c;
+}
+
